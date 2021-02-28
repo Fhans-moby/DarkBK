@@ -1,0 +1,54 @@
+clear
+sleep 2.0
+echo -e "\e[0m
+             █▀▀█ █▀▀█ █░█ █▀▀ █▀▀█
+             █▀▀▄ █░░█ █▀▄ █▀▀ █░░█
+             █▄▄█ ▀▀▀▀ ▀░▀ ▀▀▀ █▀▀▀\e[33m  v 1.0\e[0m";
+echo -e "\e[0m
+╔══════════════════════════════════════════════════╗
+║\e[91m   Author\e[0m :\e[92m Fhans Moby\e[0m                            ║
+║\e[91m   Rules\e[0m  :\e[92m No Recode , hargai yang buat\e[0m          ║
+║\e[91m   Github\e[0m :\e[92m https://github.com/Fhans-Moby/DarkBK\e[0m  ║
+╠══════════════════════════════════════════════════╝\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m1\e[33m]\e[32m WEB NO VPN\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m2\e[33m]\e[32m WEB VPN\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m3\e[33m]\e[31m EXIT\e[0m";
+xdg-open https://github.com/Fhans-Moby/
+read -p '╚═══════════▶︎ ' userinput1;
+#
+if [ "${userinput1}" = "1" ]
+then
+bash JSON1
+sleep 2.0
+fi
+if [ "${userinput1}" = "2" ]
+then
+bash JSON2
+fi
+if [ "${userinput1}" = "3" ]
+then
+echo -e "\e[92m[\e[91m⟳\e[92m]\e[91m SEDANG KELUAR HARAP TUNGGU...\e[0m";
+sleep 1.2
+clear
+echo -e "\e[0mWelcome to Termux!
+
+Wiki:            https://wiki.termux.com
+Community forum: https://termux.com/community
+Gitter chat:     https://gitter.im/termux/termux
+IRC channel:     #termux on freenode
+
+Working with packages:
+
+ * Search packages:   pkg search <query>
+ * Install a package: pkg install <package>
+ * Upgrade packages:  pkg upgrade
+
+Subscribing to additional repositories:
+
+ * Root:     pkg install root-repo
+ * Unstable: pkg install unstable-repo
+ * X11:      pkg install x11-repo
+
+Report issues at https://termux.com/issues
+\e[0m";
+fi

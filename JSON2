@@ -1,0 +1,5 @@
+echo -e "\e[91m SORRY , TUNGGU UPDATE SELANJUTNYA\e[0m";
+sleep 0.5
+echo -e "\e[92m[\e[91m▪\e[92m]\e[92m KEMBALI KE HALAMAN UTAMA...\e[0m";
+sleep 2.7
+python2 main.py

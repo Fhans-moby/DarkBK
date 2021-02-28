@@ -1,0 +1,41 @@
+clear
+sleep 2.0
+echo -e "\e[0m
+             █▀▀█ █▀▀█ █░█ █▀▀ █▀▀█
+             █▀▀▄ █░░█ █▀▄ █▀▀ █░░█
+             █▄▄█ ▀▀▀▀ ▀░▀ ▀▀▀ █▀▀▀\e[33m  v 1.0\e[0m";
+echo -e "\e[0m
+╔══════════════════════════════════════════════════╗
+║\e[91m   Author\e[0m :\e[92m Fhans Moby\e[0m                            ║
+║\e[91m   Rules\e[0m  :\e[92m No Recode , hargai yang buat\e[0m          ║
+║\e[91m   Github\e[0m :\e[92m https://github.com/Fhans-Moby/DarkBK\e[0m  ║
+╠══════════════════════════════════════════════════╝\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m1\e[33m]\e[32m WEB 1\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m2\e[33m]\e[32m WEB 2\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m3\e[33m]\e[31m BACK\e[0m";
+read -p '╚═══════════▶︎ ' userinput1;
+#
+if [ "${userinput1}" = "1" ]
+then
+clear
+echo -e "\e[0m\e[33m[\e[91m+\e[33m]\e[32m MEMBUKA INFORMASI WEB\e[0m";
+sleep 2.0
+echo -e "\e[92m[\e[91m√\e[92m]\e[91m ID SERVER WEB\e[0m :\e[92m 178.128/220.28\e[0m";
+echo -e "\e[0m\e[33m[\e[91m▪\e[33m]\e[32m SEDANG MEMBUKA BROWSER ANDA...\e[0m";
+sleep 2.0
+xdg-open https://tinyurl.com/ngebokep/
+sleep 2.0
+python2 main.py
+fi 
+if [ "${userinput1}" = "2" ]
+then
+clear
+echo -e "\e[0m\e[33m[\e[91m+\e[33m]\e[32m MEMBUKA INFORMASI WEB\e[0m";
+sleep 2.0
+echo -e "\e[92m[\e[91m√\e[92m]\e[91m ID SERVER WEB\e[0m :\e[92m 157.230.193.154\e[0m";
+echo -e "\e[0m\e[33m[\e[91m▪\e[33m]\e[32m SEDANG MEMBUKA BROWSER ANDA...\e[0m";
+sleep 2.0
+xdg-open http://157.230.193.154/
+sleep 2.0
+python2 main.py
+fi
